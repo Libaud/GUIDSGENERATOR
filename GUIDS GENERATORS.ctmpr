@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <MultiProject FileVersion="1">
+    <Elements Count="5">
+      <Element0 FileName="sources/PkgGUIDSGenerator.ctpkg"/>
+      <Element1 FileName="sources/PkgGUIDSGeneratorAssistant.ctpkg"/>
+      <Element2 FileName="sources/gglib.ctpr">
+        <BuildModes Count="1"/>
+        <Mode1 Name="Default"/>
+      </Element2>
+      <Element3 FileName="sources/gg.ctpr">
+        <BuildModes Count="8"/>
+        <Mode1 Name="Linux x64 Debug" Compile="True"/>
+        <Mode2 Name="Linux x86 Debug"/>
+        <Mode3 Name="Windows x64 Debug"/>
+        <Mode4 Name="Windows x86 Debug"/>
+        <Mode5 Name="Linux x64 Release"/>
+        <Mode6 Name="Linux x86 Release"/>
+        <Mode7 Name="Windows x64 Release"/>
+        <Mode8 Name="Windows x86 Release"/>
+      </Element3>
+      <Element4 FileName="sources/gggui.ctpr">
+        <BuildModes Count="14"/>
+        <Mode1 Name="Linux QT 32 Debug"/>
+        <Mode2 Name="Linux QT 64 Debug"/>
+        <Mode3 Name="Linux GTK 32 Debug"/>
+        <Mode4 Name="Linux GTK 64 Debug"/>
+        <Mode5 Name="Windows 32 Debug"/>
+        <Mode6 Name="Windows 64 Debug"/>
+        <Mode7 Name="Linux QT 32 Release"/>
+        <Mode8 Name="Linux QT 64 Release"/>
+        <Mode9 Name="Linux GTK 32 Release"/>
+        <Mode10 Name="Linux GTK 64 Release"/>
+        <Mode11 Name="Windows 32 Release"/>
+        <Mode12 Name="Windows 64 Release"/>
+        <Mode13 Name="OSX Release"/>
+        <Mode14 Name="Linux QT4 64 Debug"/>
+      </Element4>
+    </Elements>
+  </MultiProject>
+</CONFIG>

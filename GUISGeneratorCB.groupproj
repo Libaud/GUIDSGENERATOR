@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{56AA9046-73DE-4BDA-B9A0-97DE180F7348}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="GUIDS GENERATORS\sources\GUIDSComponentPackage.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GUIDS GENERATORS\sources\GUIDSAssistantPackage.cbproj">
+            <Dependencies>GUIDS GENERATORS\sources\GUIDSComponentPackage.cbproj</Dependencies>
+        </Projects>
+        <Projects Include="GUIDS GENERATORS\sources\GUIDSLibrary.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GUIDS GENERATORS\sources\GUISGenCMD.cbproj">
+            <Dependencies>GUIDS GENERATORS\sources\GUIDSComponentPackage.cbproj</Dependencies>
+        </Projects>
+        <Projects Include="GUIDS GENERATORS\sources\GUIDSGenGUI\GUIDSGenGUI.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GUIDS GENERATORS\sources\GUIDSGenGUIFMK.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="GUIDSComponentPackage">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSComponentPackage.cbproj"/>
+    </Target>
+    <Target Name="GUIDSComponentPackage:Clean">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSComponentPackage.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GUIDSComponentPackage:Make">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSComponentPackage.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="GUIDSAssistantPackage" DependsOnTargets="GUIDSComponentPackage">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSAssistantPackage.cbproj"/>
+    </Target>
+    <Target Name="GUIDSAssistantPackage:Clean" DependsOnTargets="GUIDSComponentPackage:Clean">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSAssistantPackage.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GUIDSAssistantPackage:Make" DependsOnTargets="GUIDSComponentPackage:Make">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSAssistantPackage.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="GUIDSLibrary">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSLibrary.cbproj"/>
+    </Target>
+    <Target Name="GUIDSLibrary:Clean">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSLibrary.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GUIDSLibrary:Make">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSLibrary.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="GUISGenCMD" DependsOnTargets="GUIDSComponentPackage">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUISGenCMD.cbproj"/>
+    </Target>
+    <Target Name="GUISGenCMD:Clean" DependsOnTargets="GUIDSComponentPackage:Clean">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUISGenCMD.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GUISGenCMD:Make" DependsOnTargets="GUIDSComponentPackage:Make">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUISGenCMD.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="GUIDSGenGUI">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSGenGUI\GUIDSGenGUI.cbproj"/>
+    </Target>
+    <Target Name="GUIDSGenGUI:Clean">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSGenGUI\GUIDSGenGUI.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GUIDSGenGUI:Make">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSGenGUI\GUIDSGenGUI.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="GUIDSGenGUIFMK">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSGenGUIFMK.cbproj"/>
+    </Target>
+    <Target Name="GUIDSGenGUIFMK:Clean">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSGenGUIFMK.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GUIDSGenGUIFMK:Make">
+        <MSBuild Projects="GUIDS GENERATORS\sources\GUIDSGenGUIFMK.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="GUIDSComponentPackage;GUIDSAssistantPackage;GUIDSLibrary;GUISGenCMD;GUIDSGenGUI;GUIDSGenGUIFMK"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="GUIDSComponentPackage:Clean;GUIDSAssistantPackage:Clean;GUIDSLibrary:Clean;GUISGenCMD:Clean;GUIDSGenGUI:Clean;GUIDSGenGUIFMK:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="GUIDSComponentPackage:Make;GUIDSAssistantPackage:Make;GUIDSLibrary:Make;GUISGenCMD:Make;GUIDSGenGUI:Make;GUIDSGenGUIFMK:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
