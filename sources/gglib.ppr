@@ -1,0 +1,15 @@
+library gglib;
+
+{$ifdef FPC}
+  {$mode objfpc}{$H+}
+{$endif}
+
+uses
+  Classes, gglibapi
+  { you can add units after this };
+
+{$R *.res}
+
+begin
+end.
+

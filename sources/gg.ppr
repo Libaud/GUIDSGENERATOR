@@ -1,0 +1,21 @@
+program gg;
+
+{$ifdef FPC}
+  {$mode objfpc}{$H+}
+{$endif}
+
+uses
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Classes, SysUtils, CustApp, GUIDSGenCMD;
+
+{$R *.res}
+
+begin
+  Application:= TGUIDSGeneratorCMD.Create(nil);
+  Application.Title:= 'GUID Generator';
+  Application.Run;
+  Application.Free;
+end.
+

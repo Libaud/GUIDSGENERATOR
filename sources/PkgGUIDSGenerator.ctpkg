@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <Name Value="PkgGUIDSGenerator"/>
+    <Type Value="RunAndDesignTime"/>
+    <HasRegisterProc Value="True"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <IncludeFiles Value="GUIDSGenerator"/>
+        <Libraries Value="GUIDSGenerator"/>
+        <OtherUnitFiles Value="GUIDSGenerator"/>
+        <UnitOutputDirectory Value="../packages/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+      </SearchPaths>
+      <CodeGeneration>
+        <Optimizations>
+          <OptimizationLevel Value="0"/>
+        </Optimizations>
+      </CodeGeneration>
+    </CompilerOptions>
+    <Files Count="3">
+      <Item1>
+        <Filename Value="GUIDSGenerator/TestGUIDSGenerator.pas"/>
+        <UnitName Value="TestGUIDSGenerator"/>
+      </Item1>
+      <Item2>
+        <Filename Value="GUIDSGenerator/GUIDSGenerator.pas"/>
+        <UnitName Value="GUIDSGenerator"/>
+      </Item2>
+      <Item3>
+        <Filename Value="GUIDSGenerator/RegisterGUIDSGenerator.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="RegisterGUIDSGenerator"/>
+      </Item3>
+    </Files>
+    <CompatibilityMode Value="True"/>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="adFCL"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <ObjectPath Value="../packages/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <ManyBuildModesSelection Value="&quot;Linux X86 Debug&quot;,&quot;Linux X64 Debug&quot;,&quot;Windows X86 Debug&quot;,&quot;Windows X64 Debug&quot;"/>
+    <BuildModes Active="Linux X86 Debug"/>
+    <Units>
+      <Unit>
+        <Filename Value="gglib.ppr"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="gglib/gglibapi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="20"/>
+        <CursorPos X="30" Y="39"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="GUIDSAssistantPackage.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="guidsgenassistant/guidgenassist.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="GUIDSComponent/GUIDSGen.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <CursorPos Y="6"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="GUIDSComponent/RegisterGUIDSGen.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="GUIDSGenerator/GUIDSGenerator.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="6"/>
+        <CursorPos X="79" Y="20"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="gg.ppr"/>
+        <FRMtype Value="0"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <CursorPos X="3" Y="13"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="5">
+      <Position>
+        <Filename Value="gglib/gglibapi.pas"/>
+        <Caret Line="21" Column="10" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="gglib/gglibapi.pas"/>
+        <Caret Line="26" Column="16" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="gglib/gglibapi.pas"/>
+        <Caret Line="27" Column="5" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="gglib/gglibapi.pas"/>
+        <Caret Line="33" Column="62" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="gglib/gglibapi.pas"/>
+        <Caret Line="37" Column="9" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="gglib/gglibapi.pas"/>
+        <Caret Line="39" Column="30" TopLine="20"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
